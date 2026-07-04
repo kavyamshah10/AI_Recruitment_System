@@ -5,17 +5,27 @@ Central configuration file for the AI Recruitment System.
 Stores database settings, HR credentials, file upload settings,
 and application constants.
 """
-
 from dotenv import load_dotenv
+import streamlit as st
 import os
 
 load_dotenv()
 
-DATABASE_URL = os.getenv("DATABASE_URL")
+# Try Streamlit Secrets first
+DATABASE_URL = st.secrets.get(
+    "DATABASE_URL",
+    os.getenv("DATABASE_URL")
+)
 
-HR_NAME = os.getenv("HR_NAME")
+HR_NAME = st.secrets.get(
+    "HR_NAME",
+    os.getenv("HR_NAME")
+)
 
-HR_PASSWORD = os.getenv("HR_PASSWORD")
+HR_PASSWORD = st.secrets.get(
+    "HR_PASSWORD",
+    os.getenv("HR_PASSWORD")
+)
 
 
 UPLOAD_FOLDER = "uploads/resumes"
