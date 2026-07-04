@@ -19,7 +19,7 @@ docx2txt
 pdf2image
 pytesseract
 Pillow
-
+PyMuPDF
 PyPDF2
 
 bcrypt
