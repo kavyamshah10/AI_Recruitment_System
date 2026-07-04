@@ -1,0 +1,187 @@
+/* ======================================================
+   AI Recruitment System Theme
+====================================================== */
+
+/* Main App */
+.stApp {
+    background-color: #F4F7FC;
+}
+
+
+/* ===============================
+   Buttons
+================================ */
+
+.stButton > button {
+
+    width: 100%;
+
+    border-radius: 10px;
+
+    border: none;
+
+    background: linear-gradient(90deg,#2563EB,#7C3AED);
+
+    color: white;
+
+    font-weight: bold;
+
+    padding: 10px;
+
+    transition: 0.3s;
+
+}
+
+.stButton > button:hover{
+
+    background: linear-gradient(90deg,#1D4ED8,#6D28D9);
+
+    transform: scale(1.02);
+
+}
+
+
+/* ===============================
+   Text Input
+================================ */
+
+.stTextInput input{
+
+    border-radius:10px;
+
+    border:2px solid #2563EB;
+
+}
+
+
+/* ===============================
+   Number Input
+================================ */
+
+.stNumberInput input{
+
+    border-radius:10px;
+
+}
+
+
+/* ===============================
+   Select Box
+================================ */
+
+.stSelectbox{
+
+    border-radius:10px;
+
+}
+
+
+/* ===============================
+   File Uploader
+================================ */
+
+.stFileUploader{
+
+    border:2px dashed #2563EB;
+
+    padding:10px;
+
+    border-radius:10px;
+
+}
+
+
+/* ===============================
+   Sidebar
+================================ */
+
+section[data-testid="stSidebar"]{
+
+    background:#1E293B;
+
+}
+
+
+/* Sidebar Text */
+
+section[data-testid="stSidebar"] *{
+
+    color:white;
+
+}
+
+
+/* ===============================
+   Metric Cards
+================================ */
+
+div[data-testid="metric-container"]{
+
+    border-radius:12px;
+
+    background:white;
+
+    padding:15px;
+
+    border:1px solid #E2E8F0;
+
+}
+
+
+/* ===============================
+   Tables
+================================ */
+
+thead tr th{
+
+    background:#2563EB;
+
+    color:white;
+
+}
+
+
+/* ===============================
+   Success
+================================ */
+
+div[data-baseweb="notification"]{
+
+    border-radius:10px;
+
+}
+
+
+/* ===============================
+   Progress Bar
+================================ */
+
+.stProgress > div > div > div{
+
+    background:#16A34A;
+
+}
+
+
+/* ===============================
+   Tabs
+================================ */
+
+button[role="tab"]{
+
+    font-size:16px;
+
+    font-weight:bold;
+
+}
+
+
+/* ===============================
+   Horizontal Rule
+================================ */
+
+hr{
+
+    border:1px solid #CBD5E1;
+
+}
