@@ -1,187 +1,249 @@
-/* ======================================================
-   AI Recruitment System Theme
-====================================================== */
+/* =====================================================
+   AI Recruitment System
+   Modern Theme (Light + Dark Compatible)
+===================================================== */
 
-/* Main App */
-.stApp {
-    background-color: #F4F7FC;
+/* -----------------------------------------------------
+   App Background
+----------------------------------------------------- */
+
+.stApp{
+    background: linear-gradient(135deg,#eef2ff,#f8fafc);
 }
 
+/* Dark Mode */
+@media (prefers-color-scheme: dark){
 
-/* ===============================
+.stApp{
+    background: linear-gradient(135deg,#0f172a,#1e293b);
+}
+
+}
+
+/* -----------------------------------------------------
+   Sidebar
+----------------------------------------------------- */
+
+section[data-testid="stSidebar"]{
+
+    background:linear-gradient(180deg,#1E3A8A,#6D28D9);
+
+}
+
+section[data-testid="stSidebar"] *{
+
+    color:white !important;
+
+}
+
+/* -----------------------------------------------------
    Buttons
-================================ */
+----------------------------------------------------- */
 
-.stButton > button {
+.stButton>button{
 
-    width: 100%;
+    width:100%;
 
-    border-radius: 10px;
+    border:none;
 
-    border: none;
+    border-radius:12px;
 
-    background: linear-gradient(90deg,#2563EB,#7C3AED);
+    padding:0.7rem;
 
-    color: white;
+    font-weight:700;
 
-    font-weight: bold;
+    color:white;
 
-    padding: 10px;
+    background:linear-gradient(90deg,#2563EB,#7C3AED);
 
-    transition: 0.3s;
+    transition:0.25s;
 
-}
-
-.stButton > button:hover{
-
-    background: linear-gradient(90deg,#1D4ED8,#6D28D9);
-
-    transform: scale(1.02);
+    box-shadow:0 5px 15px rgba(37,99,235,.25);
 
 }
 
+.stButton>button:hover{
 
-/* ===============================
-   Text Input
-================================ */
+    transform:translateY(-2px);
 
-.stTextInput input{
+    background:linear-gradient(90deg,#1D4ED8,#6D28D9);
 
-    border-radius:10px;
+    box-shadow:0 10px 20px rgba(37,99,235,.35);
+
+}
+
+/* -----------------------------------------------------
+   Inputs
+----------------------------------------------------- */
+
+.stTextInput input,
+.stNumberInput input,
+.stTextArea textarea{
+
+    border-radius:12px;
+
+    border:2px solid #CBD5E1;
+
+}
+
+.stTextInput input:focus,
+.stNumberInput input:focus,
+.stTextArea textarea:focus{
 
     border:2px solid #2563EB;
 
 }
 
-
-/* ===============================
-   Number Input
-================================ */
-
-.stNumberInput input{
-
-    border-radius:10px;
-
-}
-
-
-/* ===============================
-   Select Box
-================================ */
+/* -----------------------------------------------------
+   Selectbox
+----------------------------------------------------- */
 
 .stSelectbox{
 
-    border-radius:10px;
+    border-radius:12px;
 
 }
 
-
-/* ===============================
-   File Uploader
-================================ */
+/* -----------------------------------------------------
+   File Upload
+----------------------------------------------------- */
 
 .stFileUploader{
 
-    border:2px dashed #2563EB;
+    border:2px dashed #6366F1;
 
-    padding:10px;
-
-    border-radius:10px;
-
-}
-
-
-/* ===============================
-   Sidebar
-================================ */
-
-section[data-testid="stSidebar"]{
-
-    background:#1E293B;
-
-}
-
-
-/* Sidebar Text */
-
-section[data-testid="stSidebar"] *{
-
-    color:white;
-
-}
-
-
-/* ===============================
-   Metric Cards
-================================ */
-
-div[data-testid="metric-container"]{
-
-    border-radius:12px;
-
-    background:white;
+    border-radius:15px;
 
     padding:15px;
 
-    border:1px solid #E2E8F0;
+}
+
+/* -----------------------------------------------------
+   Metric Cards
+----------------------------------------------------- */
+
+div[data-testid="metric-container"]{
+
+    border-radius:18px;
+
+    padding:18px;
+
+    border:1px solid rgba(148,163,184,.3);
+
+    backdrop-filter:blur(10px);
+
+    background:rgba(255,255,255,.75);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
 
 }
 
+/* Dark */
 
-/* ===============================
-   Tables
-================================ */
+@media (prefers-color-scheme: dark){
+
+div[data-testid="metric-container"]{
+
+    background:rgba(30,41,59,.75);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+}
+
+/* -----------------------------------------------------
+   DataFrame
+----------------------------------------------------- */
 
 thead tr th{
 
-    background:#2563EB;
+    background:#2563EB !important;
 
-    color:white;
+    color:white !important;
 
 }
 
+tbody tr:hover{
 
-/* ===============================
-   Success
-================================ */
+    background:rgba(37,99,235,.08);
+
+}
+
+/* -----------------------------------------------------
+   Alerts
+----------------------------------------------------- */
 
 div[data-baseweb="notification"]{
 
-    border-radius:10px;
+    border-radius:12px;
 
 }
 
-
-/* ===============================
+/* -----------------------------------------------------
    Progress Bar
-================================ */
+----------------------------------------------------- */
 
-.stProgress > div > div > div{
+.stProgress>div>div>div{
 
-    background:#16A34A;
+    background:linear-gradient(90deg,#16A34A,#22C55E);
 
 }
 
-
-/* ===============================
+/* -----------------------------------------------------
    Tabs
-================================ */
+----------------------------------------------------- */
 
 button[role="tab"]{
 
-    font-size:16px;
+    border-radius:10px;
 
-    font-weight:bold;
+    font-weight:700;
+
+    transition:.2s;
 
 }
 
+button[role="tab"]:hover{
 
-/* ===============================
-   Horizontal Rule
-================================ */
+    background:#2563EB22;
+
+}
+
+/* -----------------------------------------------------
+   HR
+----------------------------------------------------- */
 
 hr{
 
-    border:1px solid #CBD5E1;
+    border:1px solid rgba(148,163,184,.25);
+
+}
+
+/* -----------------------------------------------------
+   Cards
+----------------------------------------------------- */
+
+div[data-testid="stVerticalBlock"]{
+
+    border-radius:15px;
+
+}
+
+/* -----------------------------------------------------
+   Links
+----------------------------------------------------- */
+
+a{
+
+    color:#2563EB;
+
+    text-decoration:none;
+
+}
+
+a:hover{
+
+    color:#7C3AED;
 
 }
